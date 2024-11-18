@@ -1,0 +1,44 @@
+:root{
+    --color1: #A6D49F;
+    --color2: #2C6E49;
+    --light: #FF8552;
+    --bckgrnd: #1E1E24;
+}
+
+
+
+body{
+    background-color: var(--bckgrnd);
+}
+
+
+h1{
+    color: var(--color1);
+}
+
+.flexBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    font-size: 30px;
+    
+    li{
+        position: relative;
+
+        &:hover{
+            color: var(--light);
+        }
+    }
+
+    a{
+        color: var(--color1);
+        text-decoration: none;
+    }
+}
