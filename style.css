@@ -11,27 +11,88 @@ body {
 
 h1 {
   color: var(--color1);
+  font-size: 40px;
 }
 
 .flexBox {
+  position: fixed;
   display: flex;
-  flex-direction: row;
+  text-align: center;
   justify-content: space-between;
+  align-items: center;
+  width: 93vw;
+  z-index: 5;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 75px;
+  color: var(--color1);
   font-size: 30px;
 }
 ul li {
   position: relative;
+  transition: all 0.4s ease;
 }
 ul li:hover {
   color: var(--light);
 }
+ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 0;
+  height: 2px;
+  background-color: var(--light);
+  transition: all 0.3s ease;
+}
+ul li:hover::after {
+  animation: hoveranim1 0.3s ease forwards;
+  background-color: var(--color1);
+}
+ul li:not(:hover)::after {
+  animation: hoveranim1rev 0.3s ease forwards;
+}
 ul a {
-  color: var(--color1);
   text-decoration: none;
+}
+
+@keyframes hoveranim1 {
+  from {
+    translate: 0 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+  }
+  to {
+    translate: 0 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@keyframes hoveranim1rev {
+  from {
+    translate: 0 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  to {
+    translate: 0 0;
+    bottom: 0;
+    left: 100%;
+    width: 0;
+  }
+}
+.sect1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100.5vh;
+  color: var(--color1);
 }/*# sourceMappingURL=style.css.map */
