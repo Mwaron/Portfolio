@@ -1,7 +1,7 @@
 :root {
-  --color1: #A6D49F;
-  --color2: #2C6E49;
-  --light: #FF8552;
+  --color1: #0994a4;
+  --color2: #87CEEB;
+  --light: #F5F5F5;
   --bckgrnd: #1E1E24;
 }
 
@@ -12,11 +12,6 @@
 
 body {
   background-color: var(--bckgrnd);
-}
-
-h1 {
-  color: var(--color1);
-  font-size: 40px;
 }
 
 .flexBox {
@@ -35,11 +30,13 @@ h1 {
   left: 0;
   width: calc(100% - 2rem);
   z-index: 5;
-  padding-left: 5.3rem;
-  padding-right: 5.3rem;
-  box-shadow: 0 0 8px var(--color1);
-  /*font-family: 'Courier New', Courier, monospace;*/
-  font-family: "Sofia", sans-serif;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  box-shadow: 0 0 7px var(--color2);
+}
+.flexBox h1 {
+  color: var(--color1);
+  font-size: 45px;
 }
 
 ul {
@@ -111,14 +108,14 @@ ul a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100.5vh;
   gap: 30px;
   margin-left: 30vw;
   margin-right: 30vw;
-  color: var(--color1);
+  color: var(--light);
 }
 .sect h1 {
-  color: var(--light);
+  color: var(--color2);
   font-size: 3rem;
 }
 .sect p {
