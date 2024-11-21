@@ -10,6 +10,31 @@
     font-family: "Outfit"
 }
 
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+    .Navbar{
+
+        h1{
+            display: none;
+        }
+        ul{
+            padding-left: 0;
+        }
+    
+    
+    .sect{
+
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    }
+}
 ///////////////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
@@ -30,13 +55,24 @@
     z-index: 10;
     background-color: var(--bckgrnd);
 
+    
     .loadbutton{
         font-size: 0.4rem;
         height: 6rem;
         width: 10rem;
         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        transition: all 0.3s ease;
+        
+        
         &:hover{
-            color: var(--color1);
+            cursor: pointer;
+            color: var(--bckgrnd);
+            background-color: var(--color1);
+
         }
     }
 
@@ -51,9 +87,16 @@
 ///////////////////////////////////
 ///////////////////////////////////
 
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--bckgrnd);
+}
+
 h1{
     color: var(--color2);
     font-size: 7rem;
+    text-align: center;
 }
 
 h2{
@@ -62,13 +105,10 @@ h2{
 }
 
 
-body{
-    background-color: var(--bckgrnd);
-}
 
 
 
-.flexBox{
+.Navbar{
     position: fixed;
     display: flex;
     text-align: center;
@@ -106,6 +146,7 @@ ul{
     color: var(--color1);
     
     font-size: 30px;
+
     li{
         position: relative;
         transition: all 0.4s ease;
@@ -122,7 +163,6 @@ ul{
             width: 0;
             height: 2px;
             background-color: var(--light);
-            transition: all 0.3s ease;
         }
 
         &:hover::after{
@@ -199,7 +239,6 @@ ul{
         z-index: -1;
     }
 }
-
 ///////////////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
@@ -217,6 +256,7 @@ ul{
     justify-content: center;
     align-items: center;
     height: 100.5vh;
+
     
     
     gap: 30px;
@@ -231,6 +271,8 @@ ul{
         font-size: 1.6rem;
         margin-right: 15vw;
         margin-left: 15vw;
+        text-align: justify;
+
     }
 }
 
@@ -263,6 +305,7 @@ ul{
         transition: all 0.3s ease;
 
             &:hover{
+                cursor: pointer;
                 background-color: var(--light);
                 color: var(--color1);
                 scale: 1.1;

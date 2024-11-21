@@ -10,6 +10,22 @@
   font-family: "Outfit";
 }
 
+html {
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+  .Navbar h1 {
+    display: none;
+  }
+  .Navbar ul {
+    padding-left: 0;
+  }
+  .Navbar .sect p {
+    font-size: 1.5rem;
+  }
+}
 /* LOADSCREEN */
 .loadscreen {
   display: flex;
@@ -27,18 +43,31 @@
   font-size: 0.4rem;
   height: 6rem;
   width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 .loadscreen .loadbutton:hover {
-  color: var(--color1);
+  cursor: pointer;
+  color: var(--bckgrnd);
+  background-color: var(--color1);
 }
 
 .loadscreenToMainscreen {
   animation: loadscreen 0.7s ease-out forwards;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--bckgrnd);
+}
+
 h1 {
   color: var(--color2);
   font-size: 7rem;
+  text-align: center;
 }
 
 h2 {
@@ -46,11 +75,7 @@ h2 {
   font-size: 3.5rem;
 }
 
-body {
-  background-color: var(--bckgrnd);
-}
-
-.flexBox {
+.Navbar {
   position: fixed;
   display: flex;
   text-align: center;
@@ -70,7 +95,7 @@ body {
   padding-right: 7rem;
   box-shadow: 0 0 7px var(--color2);
 }
-.flexBox h1 {
+.Navbar h1 {
   color: var(--color1);
   font-size: 45px;
 }
@@ -97,7 +122,6 @@ ul li::after {
   width: 0;
   height: 2px;
   background-color: var(--light);
-  transition: all 0.3s ease;
 }
 ul li:hover::after {
   animation: hoveranim1 0.3s ease forwards;
@@ -169,6 +193,7 @@ ul a {
   font-size: 1.6rem;
   margin-right: 15vw;
   margin-left: 15vw;
+  text-align: justify;
 }
 
 .contact {
@@ -197,6 +222,7 @@ ul a {
   transition: all 0.3s ease;
 }
 .contact button:hover {
+  cursor: pointer;
   background-color: var(--light);
   color: var(--color1);
   scale: 1.1;
