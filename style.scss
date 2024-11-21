@@ -23,14 +23,13 @@ html{
                     /* Device Adjustments */
 
 @media screen and (max-width: 600px) {
+    
     body{
         align-items: center;
+        height: 100vh;
+        width: 100vw;
     }
-
-    .loadscreen{
-        background-color: var(--light);
-    }
-
+ 
 
 
     .Navbar{
@@ -42,12 +41,6 @@ html{
 
         ul{
             padding-left: 0;
-        }
-    }
-
-    .sect{
-        p{
-            font-size: 1.5rem;
         }
     }
 }
@@ -268,7 +261,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100.5vh;
+    height: 100vh;
 
     
     

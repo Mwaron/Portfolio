@@ -19,9 +19,8 @@ html {
 @media screen and (max-width: 600px) {
   body {
     align-items: center;
-  }
-  .loadscreen {
-    background-color: var(--light);
+    height: 100vh;
+    width: 100vw;
   }
   .Navbar {
     justify-content: center;
@@ -31,9 +30,6 @@ html {
   }
   .Navbar ul {
     padding-left: 0;
-  }
-  .sect p {
-    font-size: 1.5rem;
   }
 }
 /* LOADSCREEN */
@@ -188,7 +184,7 @@ ul a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100.5vh;
+  height: 100vh;
   gap: 30px;
   margin-left: 15vw;
   margin-right: 15vw;
