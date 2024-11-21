@@ -15,8 +15,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Device Adjustments */
+@media screen and (max-width: 600px) {
+  body {
+    align-items: center;
+  }
+  .Navbar {
+    justify-content: center;
+  }
+  .Navbar h1 {
+    display: none;
+  }
+  .Navbar ul {
+    padding-left: 0;
+  }
+  .sect p {
+    font-size: 1.5rem;
+  }
+}
 /* LOADSCREEN */
 .loadscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;

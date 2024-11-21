@@ -14,6 +14,41 @@ html{
     scrollbar-width: thin;
     scroll-behavior: smooth;
 }
+
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+                    /* Device Adjustments */
+
+@media screen and (max-width: 600px) {
+    body{
+        align-items: center;
+    }
+
+
+
+    .Navbar{
+        justify-content: center;
+
+        h1{
+            display: none;
+        }
+
+        ul{
+            padding-left: 0;
+        }
+    }
+
+    .sect{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
 ///////////////////////////////////
 ///////////////////////////////////
 ///////////////////////////////////
@@ -21,7 +56,9 @@ html{
                     /* LOADSCREEN */
 
 .loadscreen{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     position: fixed;
     top: 0;
