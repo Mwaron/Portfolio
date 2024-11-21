@@ -175,7 +175,7 @@ ul a {
     opacity: 0.5;
   }
   100% {
-    scale: 1000%;
+    scale: 5000%;
     opacity: 0;
     z-index: -1;
   }
