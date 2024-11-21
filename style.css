@@ -20,6 +20,9 @@ html {
   body {
     align-items: center;
   }
+  .loadscreen {
+    background-color: var(--light);
+  }
   .Navbar {
     justify-content: center;
   }
