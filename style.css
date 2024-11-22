@@ -22,12 +22,14 @@ html {
     width: 100vw;
   }
   .Navbar {
-    justify-content: space-between;
+    justify-content: center;
   }
   .Navbar h1 {
     display: none;
   }
   .Navbar ul {
+    justify-content: center;
+    width: calc(100vw - 2rem);
     padding-left: 0;
   }
 }
@@ -39,6 +41,8 @@ html {
   position: fixed;
   top: 0;
   left: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -63,6 +67,9 @@ html {
 body {
   background-color: var(--bckgrnd);
   margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
 h1 {
@@ -90,7 +97,7 @@ h2 {
   margin: 1rem;
   top: 0;
   left: 0;
-  width: calc(100% - 2rem);
+  width: calc(100vw - 2rem);
   z-index: 5;
   padding: 5px 10vw;
   box-shadow: 0 0 7px var(--color2);
@@ -175,7 +182,7 @@ ul a {
   100% {
     scale: 5000%;
     opacity: 0;
-    z-index: -1;
+    display: none;
   }
 }
 .sect {
@@ -199,8 +206,9 @@ ul a {
 .contact {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
   gap: 5.5rem;
 }
 .contact a {
