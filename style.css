@@ -15,24 +15,25 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Device Adjustments */
-@media screen and (max-width: 600px) {
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
-  .Navbar {
-    justify-content: center;
-  }
-  .Navbar h1 {
-    display: none;
-  }
-  .Navbar ul {
-    justify-content: center;
-    width: calc(100vw - 2rem);
-    padding-left: 0;
-  }
+body {
+  background-color: var(--bckgrnd);
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
+
+h1 {
+  color: var(--color2);
+  font-size: clamp(3.5rem, 7vw, 8rem);
+  text-align: center;
+}
+
+h2 {
+  color: var(--color2);
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+}
+
 /* LOADSCREEN */
 .loadscreen {
   display: flex;
@@ -62,25 +63,6 @@ html {
 
 .loadscreenToMainscreen {
   animation: loadscreen 0.7s ease-out forwards;
-}
-
-body {
-  background-color: var(--bckgrnd);
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-
-h1 {
-  color: var(--color2);
-  font-size: 7rem;
-  text-align: center;
-}
-
-h2 {
-  color: var(--color2);
-  font-size: 3.5rem;
 }
 
 .Navbar {
@@ -189,11 +171,13 @@ ul a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   height: 100vh;
   gap: 30px;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin: 3rem 0;
+  padding-left: 15vw;
+  padding-right: 15vw;
   color: var(--light);
 }
 .sect p {
@@ -246,4 +230,38 @@ ul a {
   padding: 0;
   align-items: center;
   font-family: "Outfit";
+}
+
+/* Device Adjustments */
+@media screen and (max-width: 600px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  body p {
+    font-size: 1.5rem;
+  }
+  .Navbar {
+    justify-content: center;
+  }
+  .Navbar h1 {
+    display: none;
+  }
+  .Navbar ul {
+    justify-content: center;
+    width: calc(100vw - 2rem);
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sect {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sect {
+    margin-bottom: 20vh;
+  }
 }/*# sourceMappingURL=style.css.map */
